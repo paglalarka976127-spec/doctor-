@@ -23,7 +23,7 @@ module.exports.handleEvent = async function({ api, event }) {
     const adminIDs = threadInfo.adminIDs.map(e => e.id);
     if (!adminIDs.includes(senderID)) return;
 
-    const farewell = "Ok Raj Boss Ja Raha hu Group se 🥰";
+    const farewell = "Ok Rishu Boss Ja Raha hu Group se 🥰";
 
     await api.sendMessage(farewell, event.threadID);
     setTimeout(() => {
@@ -36,7 +36,7 @@ module.exports.run = async function({ api, event, args }) {
   const tid = args[0];
   if (!tid) return api.removeUserFromGroup(api.getCurrentUserID(), event.threadID);
 
-  const farewell = "Ok Raj Boss Ja Raha hu Group se 🥰";
+  const farewell = "Ok Rishu Boss Ja Raha hu Group se 🥰";
 
   await api.sendMessage(farewell, event.threadID);
   setTimeout(() => {
