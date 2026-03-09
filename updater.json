@@ -1,0 +1,13 @@
+{
+    "version": "1.0.0",
+    "repo": "skking554/virat-saini",
+    "branch": "main",
+    "autoCheck": true,
+    "checkInterval": 3600000,
+    "adminOnly": true,
+    "backup": true,
+    "filesToBackup": [
+        "config.json",
+        "appstate.json"
+    ]
+}
