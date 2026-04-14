@@ -14,11 +14,9 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("nach") ||
-     react.includes("nachna") ||
-     react.includes("nch") ||
-react.includes("nachh")) {
+react.includes("Nach")) {
     var msg = {
-        body: `MAI TO NACHUNGI🙈😒😒👈`,attachment: fs.createReadStream(__dirname + `/noprefix/nach.mp4`)
+        body: `Basanti ne nachna chor diya ab🤨🤨`,attachment: fs.createReadStream(__dirname + `/noprefix/nach.mp4`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💃", event.messageID, (err) => {}, true)
